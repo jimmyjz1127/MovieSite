@@ -1,0 +1,28 @@
+{
+  "name": "package.kson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "create-react-app": "^5.0.1",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev" : "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimmyjz1127/MovieSite.git"
+  },
+  "author": "Jimmy Zhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimmyjz1127/MovieSite/issues"
+  },
+  "homepage": "https://github.com/jimmyjz1127/MovieSite#readme"
+}
