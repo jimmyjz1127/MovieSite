@@ -1,25 +1,29 @@
+/* ------------- Movie Item ------------*/
+
 .movieItem {
     background-position:center;
     background-size:cover;
     background-repeat: 'no-repeat';
+
     display:inline-block;
     height:250px;
     width:165px;
+    vertical-align: top;
+
+    border:solid;
+    border-color:transparent;
 }
 
 .movieItem:hover {
     transform: scale(1.1);
-    border: solid;
-    border-color: white;
-
-    .movieItemBtns {
-        display:block;
-    }
+    border-color: white;   
 }
 
-/* .movieItem:hover .movieItemBtns {
-    display:inline-block;
-} */
+.movieItem:hover .moviePosterBtn {
+    display:block;
+}
+
+/*---------- Popup Window ------------*/
 
 .wallpaper {
     height:25%;
@@ -35,10 +39,10 @@
 }
 
 
-/* button styling */
-.movieItemBtns {
-    display:none;
-    float:center;
+/*---------- button styling -----------*/
+.moviePosterBtn {
+    margin:auto;
+    align-items: center;
 }
 
 .movieItemBtn {

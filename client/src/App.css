@@ -51,4 +51,8 @@
   background-color:black;
   overflow:auto;
   white-space:nowrap;
+  padding: 5%;
+
+  height:25vh;
+  width:75vw;
 }

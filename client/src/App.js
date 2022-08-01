@@ -28,7 +28,7 @@ function App() {
   }
 
   const movies = [
-    movie, movie,movie,movie,movie,movie
+    movie, movie,movie,movie,movie,movie, movie, movie, movie,movie,movie,movie
   ]
 
   return (
