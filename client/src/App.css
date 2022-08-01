@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  margin:50px;
+  margin-right:200px;
+  margin-left:200px;
+  border:solid;
+  border-width: 1px;
+  border-radius:0.25rem;
+}
+
+/* Widgets*/
+.contentBelt {
+  background-color:black;
+  overflow:auto;
+  white-space:nowrap;
+}

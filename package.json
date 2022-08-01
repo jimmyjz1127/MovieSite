@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "concurrently": "^7.3.0",
     "cors": "^2.8.5",
     "create-react-app": "^5.0.1",
     "express": "^4.18.1",
@@ -11,9 +12,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev" : "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,58 @@
+.movieItem {
+    background-position:center;
+    background-size:cover;
+    background-repeat: 'no-repeat';
+    display:inline-block;
+    height:250px;
+    width:165px;
+}
+
+.movieItem:hover {
+    transform: scale(1.1);
+    border: solid;
+    border-color: white;
+
+    .movieItemBtns {
+        display:block;
+    }
+}
+
+/* .movieItem:hover .movieItemBtns {
+    display:inline-block;
+} */
+
+.wallpaper {
+    height:25%;
+    background-position:center;
+    background-size:contain;
+    background-repeat: 'no-repeat';
+    background-size: 50%;
+}
+
+.popup {
+    position:relative;
+    height:35vh;
+}
+
+
+/* button styling */
+.movieItemBtns {
+    display:none;
+    float:center;
+}
+
+.movieItemBtn {
+    border:none;
+    padding: 5px 10px;
+}
+
+.movieItemBtn:hover {
+    border:solid;
+    border-color:white;
+}
+
+.closeBtn {
+    background-color: lightgray;
+    float:right;
+}
+
