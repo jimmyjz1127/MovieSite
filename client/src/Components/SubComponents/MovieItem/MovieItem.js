@@ -4,7 +4,7 @@ import React from 'react';
 import './MovieItem.css';
 
 /** Library */
-import {FaThumbsDown, FaThumbsUp} from 'react-icons/fa';
+import {FaThumbsDown, FaThumbsUp, FaRegPlayCircle} from 'react-icons/fa';
 import {useState} from 'react';
 import Popup from 'react-animated-popup';
 import {Link} from 'react-router-dom';
@@ -57,25 +57,23 @@ function MovieItem(props) {
         <div className='movieItem' style={{backgroundImage : `url(${poster})`}}>
                 
                 <button 
-                    className='moviePosterBtn' 
+                    className='movieItemBtn moviePosterBtn' 
                     onClick={() => setPopupVisibility(true)}
                 >
                     View
                 </button>
 
                 <br/>
-                <button className='moviePosterBtn'>
-                    <Link to={'/' + id}>Play</Link>
-                </button>
                 
+                <Link className='moviePosterBtn' to={'/' + id}><FaRegPlayCircle/></Link>
+            
 
-                <Popup style={{width:'500px'}} visible={popupVisibility} onClose={() => setPopupVisibility(false)}>
+                <Popup visible={popupVisibility} onClose={() => setPopupVisibility(false)}>
                     <div className='popup'>
                         <button className='movieItemBtn closeBtn' onClick={() => setPopupVisibility(false)}>Close</button>
+                        <br/>
 
-                        <div className='wallpaper' style={{backgroundImage:`url(${wallpaper})`}}>
-                            <h2>{title}</h2>
-                        </div>
+                        <img className='wallpaper' src={wallpaper} />
 
                         <div className = 'movieInfo'>
                             <MovieInfo movie={props.movie}/>

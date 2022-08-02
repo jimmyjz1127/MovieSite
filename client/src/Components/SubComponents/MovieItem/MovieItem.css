@@ -6,16 +6,17 @@
     background-repeat: 'no-repeat';
 
     display:inline-block;
-    height:250px;
-    width:165px;
+    height:300px;
+    width:198px;
     vertical-align: top;
 
-    border:solid;
-    border-color:transparent;
+    margin-right:2px;
+    margin-left:2px;
+    
 }
 
 .movieItem:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     border-color: white;   
 }
 
@@ -26,28 +27,32 @@
 /*---------- Popup Window ------------*/
 
 .wallpaper {
-    height:25%;
-    background-position:center;
-    background-size:contain;
-    background-repeat: 'no-repeat';
-    background-size: 50%;
+    height:80%;
+    width:90%;
+    margin:auto;
 }
 
 .popup {
-    position:relative;
-    height:35vh;
+    height:100%;
+    width: 100%;
+    border-radius:0.25rem;
 }
 
 
 /*---------- button styling -----------*/
 .moviePosterBtn {
-    margin:auto;
-    align-items: center;
+    display:none;
+    margin-right:auto;
+    margin-left:auto;
+    width:90%;
+    font-weight: bold;
+    border-radius: 0.25rem;
 }
 
 .movieItemBtn {
     border:none;
     padding: 5px 10px;
+    border-radius: 0.25rem;
 }
 
 .movieItemBtn:hover {

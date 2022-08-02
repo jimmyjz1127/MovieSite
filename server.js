@@ -9,9 +9,10 @@ function runServer(){
     
     app.get('/movie', (req,res)=> {
         console.log('/movie');
-        res.sendFile(path.join(__dirname, 'movies/test/test1.mp4'));
+        res.sendFile(path.join(__dirname, 'movies/test1.mp4'));
     })
 
+    
     app.get('/moviePoster', (req,res) => {
         console.log('/moviePoster');
         res.sendFile(path.join(__dirname, 'movies/test/americandad-poster.jpg'));
@@ -21,7 +22,6 @@ function runServer(){
         console.log('/movieWallpaper');
         res.sendFile(path.join(__dirname, 'movies/test/americandad-wallpaper.jpg'));
     })
-
 
     var port = 5000;
     app.listen(port, () => console.log('Server running on port ', port));
