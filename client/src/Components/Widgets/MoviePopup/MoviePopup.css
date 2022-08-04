@@ -1,0 +1,49 @@
+/* Main Styling */
+
+.popup {
+    align-items: flex-start;
+    flex-direction: column;
+    
+    background-color: white;
+    border-radius:0.25rem;
+
+    position:absolute;
+    z-index: 100;
+
+}
+
+.wallpaper {
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    align-items: flex-end;
+    width:100%;
+    aspect-ratio: 608/404;
+    border-radius: 0.25rem;
+
+    margin-bottom: 2%;
+}
+
+.movie-info {
+    display:flex;
+    flex-direction: column;
+}
+
+.basic-info {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.basic-info > div {
+    border:solid;
+
+}
+
+/* button styling*/
+.popup-btns {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

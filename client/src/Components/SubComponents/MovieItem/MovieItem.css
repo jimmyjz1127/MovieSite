@@ -1,67 +1,64 @@
 /* ------------- Movie Item ------------*/
 
-.movieItem {
-    background-position:center;
-    background-size:cover;
-    background-repeat: 'no-repeat';
+.movie-item {
+    display:flex;
+    flex-direction: column;
+    flex-grow:1;
 
-    display:inline-block;
-    height:300px;
-    width:198px;
-    vertical-align: top;
-
-    margin-right:2px;
-    margin-left:2px;
-    
+    border:solid;
+    border-color: transparent;
 }
 
-.movieItem:hover {
+.movie-poster {
+    display:flex;
+    justify-content: center; /* center x-axis */
+    align-items: center; /*center y-axis*/
+
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat; /* important*/
+
+    min-height:200px;
+    width:100%;
+    aspect-ratio: 0.674;
+}
+
+.movie-item:hover {
     transform: scale(1.2);
     border-color: white;   
 }
 
-.movieItem:hover .moviePosterBtn {
+.movie-item:hover .movie-poster-btn {
     display:block;
 }
 
-/*---------- Popup Window ------------*/
-
-.wallpaper {
-    height:80%;
-    width:90%;
-    margin:auto;
-}
-
-.popup {
-    height:100%;
-    width: 100%;
-    border-radius:0.25rem;
-}
-
-
 /*---------- button styling -----------*/
-.moviePosterBtn {
+.movie-poster-btn {
     display:none;
-    margin-right:auto;
-    margin-left:auto;
-    width:90%;
-    font-weight: bold;
-    border-radius: 0.25rem;
 }
 
-.movieItemBtn {
+.view-btn-container {
+    width:100%;
+    height:100%;
+    margin:none;
+    padding:none;
     border:none;
-    padding: 5px 10px;
-    border-radius: 0.25rem;
 }
 
-.movieItemBtn:hover {
-    border:solid;
-    border-color:white;
+.view-btn {
+    width:100%; 
+    margin:none;
+    background-color: rgb(40,40,40);
+    color:white;
+    cursor:pointer;
 }
 
-.closeBtn {
-    background-color: lightgray;
-    float:right;
+.play-btn {
+    background-color: transparent;
+    border:none;
+    font-size:xx-large;
+    cursor:pointer;
 }
+
+
 

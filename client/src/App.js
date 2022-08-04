@@ -29,21 +29,20 @@ function App() {
   }
 
   const movies = [
-    movie, movie,movie,movie,movie,movie,movie,movie,movie,movie
+    movie, movie,movie,movie,movie,movie,movie,movie,movie,movie,movie,movie,movie
   ]
+
 
   return (
     <BrowserRouter>
       <div className="App">
-        <h1>TESTESTETEST</h1>
-        <br/>
         <div className='container'>
-          <ContentBelt movies={movies}/>
+            <ContentBelt movies={movies}/>
         </div>
         
       </div>
     </BrowserRouter>
-   
+    
   );
 }
 
